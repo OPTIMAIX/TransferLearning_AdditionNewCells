@@ -9,7 +9,7 @@ This folder contains the following python scripts:
 
 - [**main_training_regular.py**](./main_training_regular.py): Main function for performing the training of the DQN MARL capacity sharing from scratch. 
 - [**main_retraining_transfer.py**](./main_training_regular.py): Main function for performing the re-training of the DQN MARL capacity sharing by employing the TRL approach. 
-- [**transfer_weights.py**](./transfer_weights.py): Function that allows transfering the weights of a the policy trained for *N* cells to a policy that will be trained for *N'*=*N*+1. 
+- [**transfer_weights.py**](./transfer_weights.py): Function that allows transfering the weights of a policy trained for *N* cells to a policy that will be trained for *N'*=*N*+1. 
 - [**environment_5G_multipleBS.py**](./environment_5G_multipleBS.py): Python environment based on py_environment.PyEnvironment. 
 - [**BS_controller.py**](./BS_controller.py): BS_controller class included in the DQN-MARL capacity sharing solution.
 - [**BS.py**](./BS.py): BS class included in the DQN-MARL capacity sharing solution.
