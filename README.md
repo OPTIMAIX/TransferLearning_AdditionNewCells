@@ -4,8 +4,6 @@ This Github repository includes the code of a **Transfer Reinforcement Learning 
  
 The DQN-MARL capacity sharing solution allows dynamically distributing the capacity in multiple RAN nodes among multiple tenants, each of them provided with a RAN slice. The capacity sharing is performed so that the traffic demands and Service Level Agreement (SLA) of the different tenant are satisfied and the resources in the different RAN nodes are efficiently used. A common operation for operators is to make changes of the network topology by deploying new cells, increasing the capacity. This operation involves the re-training of the DQN-MARL capacity sharing solution, since the traffic in the area will change and dimensions of the deep neural networks in the solution depends on the number of cells. This re-training can take a lot of time as it involves acquiring a large number of action/reward experiences with the new environment. The TRL approach included in this Github allows accelerating this re-training by leveraging the [inter-task mapping](https://dl.acm.org/doi/10.1145/1329125.1329170) technique, which allows transferring the weights of a previously trained policy for *N* cells to train a policy for *N'*=*N*+1 cells. 
 
-The development of this solution is part of the [OPTIMAIX project](https://optimaix.upc.edu/). 
-
 ## Contents
 This folder contains the following python scripts: 
 
